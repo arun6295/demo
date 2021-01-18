@@ -1,0 +1,22 @@
+<head>
+    <title>
+        HOME PAGE
+    </title>
+    <style type="text/css" media="screen">
+       body {
+           background-color: rgb(147, 212, 238);
+           text-decoration: white;
+       }
+
+
+    </style>
+</head>
+<body>
+    Hobbies of <%=data.name%>are:<br/>
+    <ul>
+        <%=data.hobbies.forEach((item)=>{<%=
+        <li><%=item%></li>
+
+        %>});%>
+    </ul>
+</body>
