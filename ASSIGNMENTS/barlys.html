@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>canvas</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="400"style="border:1px solid #00ff33;">
+</canvas>
+<script type="text/javascript">
+var c = document.getElementById("myCanvas"); 
+var ctx = c.getContext("2d"); 
+ctx.font="10px"
+ctx.linewidth=2.5;
+ctx.strokeText("lakhs tonnes",30,28);
+ctx.strokeText("600-",0,20);
+ctx.strokeText("500-",0,60);
+ctx.strokeText("400-",0,110);
+ctx.strokeText("300-",0,160);
+ctx.strokeText("200-",0,200);
+ctx.strokeText("100  -",0,250);
+ctx.strokeText("50  -",0,300);
+ctx.strokeText("0  -",0,360);
+
+ctx.moveTo(30,400);
+ctx.lineTo(30,0);
+ctx.moveTo(0,350);
+ctx.lineTo(500,350); 
+ctx.stroke();
+ctx.strokeText("|",120,380);
+ctx.strokeText("2001",120,390);
+ctx.strokeText("|",200,380);
+ctx.strokeText("2002",200,390);
+ctx.strokeText("|",250,380);
+ctx.strokeText("2003",250,390);
+ctx.strokeText("|",300,380);
+ctx.strokeText("2004",300,390);
+ctx.strokeText("|",350,380);
+ctx.strokeText("2005",350,390);
+ctx.strokeText("|",400,380);
+ctx.strokeText("2006",400,390);
+ctx.strokeText("|",450,380);
+ctx.strokeText("2007",450,390);
+
+ctx.moveTo(80,230);
+ctx.lineTo(150,245); 
+ctx.moveTo(150,245); 
+ctx.lineTo(200,187);  
+ctx.moveTo(200,187); 
+ctx.lineTo(250,190); 
+
+
+
+  
+ctx.moveTo(250,190);
+ctx.lineTo(280,245); 
+ctx.moveTo(280,245); 
+ctx.lineTo(330,187);  
+ctx.moveTo(330,187); 
+ctx.lineTo(400,300); 
+
+ctx.stroke();
+ctx.fill("green");
+</script>
+</body>
+</html>

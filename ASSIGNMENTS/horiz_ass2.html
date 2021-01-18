@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>video title</title>
+<style>
+img {
+ border:1px black solid;
+ box-shape:border-box;
+ top-margin:20px;
+ left:50px;
+ right:40px;
+ 
+}
+</style>
+
+</head>
+<body style="background-color:lightcyan;">
+
+<h2 style="color:red;font-style:italic;">AWESOME ONLINE VIDEOS</h2>
+<button onclick="bgcolor()" type="button">changebgcolor</button>
+<p id="color" style="">
+<hr width="100%"></br>
+      <figure>
+      <img src="download (1).jpg" alt="image1" heigth=400px width=500px></br></br>
+      <figcaption>flatiron building</figcaption>
+</figure>
+<hr width="100%"></br>
+<p> VIDEO PLAYABLE</p>
+<button onclick="playvid()" type="button">play</button>
+<button onlclick="pausevid()" type="button">pause</button>
+<video width="320" height="240">
+<source src="" type="video">
+</video>
+<script>
+
+function bgcolor()
+{
+document.body.style.backgroundColor="green";
+}
+</script>
+</body>
+</html>

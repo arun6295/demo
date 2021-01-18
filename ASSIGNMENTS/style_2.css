@@ -1,0 +1,9 @@
+.sty{
+font-size:10px 20px 30px;
+font-color:red green blue;
+text-overflow:clip;
+text-align:center,left;
+color:blue; 
+}
+body{
+background-color:#fefbd8;}

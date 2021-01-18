@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>"XENA EVENTS"</title>
+<link rel="icon" href="download (1).jpg" type="image">
+<script type="text/javascript">
+function validateform(){
+var alpha="/^[A-Za-z]+$";
+var name=document.myform.name1.value;
+var age= document.myform.age.value;
+if(name.value.match(alpha)||name.value=""){
+alert("enter only alphabets");
+}
+if(age<18)
+{
+alert("age should be greater than 18");
+}
+</script>
+</head>
+<body>
+<form name="myform" action="" method="POST" onsubmit="validateform()">
+<fieldset>
+<p>INFORMATION</p>
+name:<input type="text" name="name" placeholder="name" maxlength=20 pattern="/[a-zA-Z]+$/"></br></br></br>
+age:<input type="text" name="age" pattern="/^["></br></br></br>
+email:<input type="email" name="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_{|}]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"></br></br>
+
+<select name="city" id="reg_city">
+<option value="rajkot">rajkot</option>
+<option value="vizag">vizag</option>
+<option value="bangalore">bangalore</option>
+<option value="hyderabad">hyderabad</option>
+</select></br></br></br>
+
+<input type="submit" value="submit" onclick="return validateform()">
+<input type="reset" value="reset">
+
+</fieldset>
+
+</body>
+</html>

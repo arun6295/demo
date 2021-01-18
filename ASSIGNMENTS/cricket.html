@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>canvas</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="400"style="border:1px solid #00ff33;">
+</canvas>
+<script type="text/javascript">
+var c = document.getElementById("myCanvas"); 
+var ctx = c.getContext("2d"); 
+ctx.font="10px"
+ctx.linewidth=2.5;
+ctx.strokeText("Runs",30,28);
+ctx.strokeText("250-",0,20);
+ctx.strokeText("210-",0,60);
+ctx.strokeText("180-",0,110);
+ctx.strokeText("150-",0,160);
+ctx.strokeText("100-",0,200);
+ctx.strokeText("70  -",0,250);
+ctx.strokeText("40  -",0,300);
+ctx.strokeText("0  -",0,360);
+
+ctx.moveTo(35,380);
+ctx.lineTo(35,0);
+ctx.moveTo(0,360);
+ctx.lineTo(490,360); 
+ctx.stroke();
+ctx.strokeText("|",120,380);
+ctx.strokeText("5",120,390);
+ctx.strokeText("|",200,380);
+ctx.strokeText("10",200,390);
+ctx.strokeText("|",300,380);
+ctx.strokeText("15",300,390);
+ctx.strokeText("|",400,380);
+ctx.strokeText("20",400,390)
+ctx.strokeText("overs->",435,370);
+
+
+
+
+  
+ctx.moveTo(130,303);
+ctx.lineTo(230,245); 
+ctx.moveTo(230,245); 
+ctx.lineTo(330,187);  
+ctx.moveTo(330,187); 
+ctx.lineTo(430,70); 
+
+ctx.stroke();
+ctx.fill("green");
+</script>
+</body>
+</html>
