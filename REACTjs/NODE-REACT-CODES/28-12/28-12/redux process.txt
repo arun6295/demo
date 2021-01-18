@@ -1,0 +1,42 @@
+let's start redux
+------------------------------
+create intial state 
+
+const intialState = 
+{
+loginInfo: false,
+message: "please sign in to do "
+}
+
+pass this intial state to reducer  function
+---------------------------------------------
+function  reducer(state = intialState,action)
+{
+return state;
+}
+
+pass reducer to store using createStore function
+------------------------------------------
+
+const store = createStore(reducer);
+
+createStore is inbuilt in react-redux library so install redux 
+
+npm install redux react-redux
+
+--------------------
+send the store to redux
+
+ <Provider store={store}>
+     <Authentication />
+    </Provider>
+---------------------
+access the redux state in other component
+const f1 =(state) =>({msg: state.message}) 
+
+connect other component to redux then 
+export default connect(f1)(Authentication);
+
+getstate from redux
+
+
